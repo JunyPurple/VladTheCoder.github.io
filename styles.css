@@ -1,0 +1,348 @@
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    border-radius: 1vh;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #01497c;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:300;
+  background-color:#01497c;
+  color:#FFF;
+}
+section{
+  text-align:center;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #023e8a 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #01497c;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 30px;
+	font-weight: 100;
+	margin-top:80px;
+	margin-left:40px;
+}
+
+.container1 {
+  display: flex; /* Use flexbox to align blocks horizontally */
+  justify-content: space-between; /* Distribute space between blocks */
+  background-color: #f4f4f4; /* Background color for the container */
+  padding: 3vh; /* Add some padding to the container */
+  border-radius: 10px; /* Rounded corners for the container */  
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+/* Style for each block */
+.block {
+  flex: 1; /* Allow each block to grow equally within the container */
+  background-color: #fff; /* White background for the blocks */
+  color: #333; /* Text color for the blocks */
+  padding: 11vh; /* Add some padding to the blocks */
+  text-align: center;
+  border-radius: 10px; /* Rounded corners for the blocks */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.2s ease; /* Add a hover effect */
+  margin: 2vh; /* Add margin to create space between blocks */
+}
+
+/* Add a hover effect on the blocks */
+.block:hover {
+  transform: scale(1.05); /* Enlarge the block on hover */
+}
+
+/* Media query for mobile devices (max-width: 768px) */
+@media (max-width: 800px) {
+  .container1 {
+      flex-direction: column; /* Stack blocks in a single column */
+      align-items: center; /* Center-align the blocks */
+      padding: 3vh;
+  }
+
+  .block {
+    padding: 8vh;
+  }
+}
+
+.container2 {
+  display: flex; /* Use flexbox to align blocks horizontally */
+  justify-content: center; /* Distribute space between blocks */
+  padding: 9.8vh; /* Add some padding to the container */
+  border-radius: 10px; /* Rounded corners for the container */  
+  margin-top: 3vh;
+  margin-bottom: 3vh;  
+  background-image: url('background.png');
+  background-size: cover; /* Adjust the size of the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Keep the image fixed while scrolling */
+}
+.quote {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f1f1f1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Adjust the values for the desired glow effect */
+
+}
+
+.blockbutton {
+  transition-duration: 0.4s;
+  padding: 14px 70px;
+  border-radius: 10px;
+  margin-top: 1%;
+}
+
+.blockbutton:hover {
+  background-color: #01497c; /* Green */
+  color: white;
+}
+
+/* .block .blockbutton {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+} */
+
+.avatar {
+  margin-bottom: 2vh;
+}
+
+.center-block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5vh 10vh;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 30vh;
+}
+
+.center-block p{
+  color: #01497c;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .center-block {
+      flex-direction: column; /* Stack blocks in a single column */
+      align-items: center; /* Center-align the blocks */
+      padding: 3vh;
+  }
+
+  /* .center-block {
+    padding: 8vh;
+  } */
+}
+
+.container3 {
+  display: flex; /* Use flexbox to align boxes horizontally */
+  background-color: #f4f4f4; /* Background color for the container */
+  padding: 20px; /* Add some padding to the container */
+  border-radius: 10px; /* Rounded corners for the container */
+  justify-content: space-between; /* Distribute space between boxes */
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+/* Style for each box */
+.box {
+  flex: 1; /* Allow each box to grow equally within the container */
+  background-color: #fff; /* White background for the boxes */
+  color: #333; /* Text color for the boxes */
+  padding: 13vh 20vh; /* Add some padding to the boxes */
+  text-align: center;
+  border-radius: 10px; /* Rounded corners for the boxes */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.2s ease; /* Add a hover effect */
+  margin: 2vh; /* Add margin to create space between boxes */
+}
+
+/* Add a hover effect on the boxes */
+.box:hover {
+  transform: scale(1.05); /* Enlarge the box on hover */
+}
+
+/* Media query for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .container3 {
+      flex-direction: column; /* Stack boxes in a single column */
+      align-items: center; /* Center-align the boxes */
+  }
+
+  .box {
+    padding: 9vh 4vh;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  padding: 2vh 4vh;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.disabled {
+  background-color: #01497c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.disabled:hover {
+  background-color: #01497c;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.container4 {
+  display: flex; /* Use flexbox to align blocks horizontally */
+  justify-content: center; /* Distribute space between blocks */
+  padding: 3vh; /* Add some padding to the container */
+  border-radius: 10px; /* Rounded corners for the container */  
+  margin-top: 3vh;
+  margin-bottom: 3vh;  
+  background-image: url('background.png');
+  background-size: cover; /* Adjust the size of the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-attachment: fixed; /* Keep the image fixed while scrolling */
+}
